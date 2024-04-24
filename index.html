@@ -7,11 +7,29 @@
     <title>LinguaGenie</title>
   </head>
   <body>
-    <h1>LinguaGenie</h1>
+    <header>
+      <h1>LinguaGenie</h1>
+    </header>
+    <main>
+      <label for="origin-languages">From:</label>
+      <select name="origin-language" id="origin-languages">
+        <option value="english">English</option>
+      </select>
+      <label for="destination-languages">To:</label>
+      <select name="destination-language" id="destination-languages">
+        <option value="spanish">Spanish</option>
+      </select>
+      <form action="">
+        <label for="requested-word">Enter word</label>
+        <input type="text" id="requested-word" />
+        <input type="submit" value="Ask the genie!" />
+      </form>
+      <div>Answer goes here</div>
+    </main>
     <footer>
       Coded by
       <a href="https://github.com/LexyVng" target="_blank">Alexia Veinoglou</a>,
-      open-sourched on
+      open-sourced on
       <a
         href="https://github.com/LexyVng/linguagenie-ai-translator"
         target="_blank"
