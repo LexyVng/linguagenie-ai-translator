@@ -82,7 +82,7 @@ form {
   border: 1px solid var(--main-color);
   border-radius: 10px;
   box-sizing: border-box;
-
+  color: var(--main-color);
   font-size: 14px;
   padding: 12px;
   width: 100%;
