@@ -22,29 +22,44 @@
   <body>
     <div class="container">
       <header>
-        <h1>LinguaGenie</h1>
-        <img
-          src="media/woman-genie-svgrepo-com.svg"
-          alt=""
-          srcset=""
-          width="40"
-          class="genie-picture"
-        />
+        <h1>
+          LinguaGenie
+          <img
+            src="media/woman-genie-svgrepo-com.svg"
+            alt=""
+            srcset=""
+            width="40"
+            class="genie-picture"
+          /><br />
+          <small class="subheading">The AI Translator</small>
+        </h1>
       </header>
       <main>
         <div class="select">
           <select name="origin-language" id="origin-languages">
             <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="italian">Italian</option>
+            <option value="french">French</option>
+            <option value="greek">Greek</option>
+            <option value="german">German</option>
+            <option value="portuguese">Portuguese</option>
           </select>
           <span class="material-symbols-outlined"> arrow_right_alt </span>
           <select name="destination-language" id="destination-languages">
             <option value="spanish">Spanish</option>
+            <option value="english">English</option>
+            <option value="italian">Italian</option>
+            <option value="french">French</option>
+            <option value="greek">Greek</option>
+            <option value="german">German</option>
+            <option value="portuguese">Portuguese</option>
           </select>
         </div>
         <form action="" id="translation-form">
           <input
             type="text"
-            placeholder="Type a word, short text or poem..."
+            placeholder="Type a word, short text or poem you want to translate..."
             class="requested-word"
             id="requested-text"
             required
