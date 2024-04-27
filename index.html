@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>LinguaGenie</title>
   </head>
@@ -39,7 +40,7 @@
             <option value="spanish">Spanish</option>
           </select>
         </div>
-        <form action="">
+        <form action="" id="translation-form">
           <input
             type="text"
             placeholder="Type a short text..."
@@ -53,7 +54,7 @@
             class="ask-genie-button"
           />
         </form>
-        <div class="answer"></div>
+        <div class="answer" id="answer"></div>
       </main>
       <footer>
         Coded by
