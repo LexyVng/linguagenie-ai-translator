@@ -91,6 +91,7 @@ form {
 ::placeholder {
   color: var(--main-color);
   font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.6;
 }
 
 .ask-genie-button {
