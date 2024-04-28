@@ -16,6 +16,7 @@
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <title>LinguaGenie</title>
   </head>
@@ -56,10 +57,10 @@
             <option value="portuguese">Portuguese</option>
           </select>
         </div>
-        <form action="" id="translation-form">
+        <form id="translation-form">
           <input
             type="text"
-            placeholder="Type a word, short text or poem you want to translate..."
+            placeholder="Type a word or short text you want to translate..."
             class="requested-word"
             id="requested-text"
             required
@@ -71,7 +72,7 @@
             class="ask-genie-button"
           />
         </form>
-        <div class="answer" id="translation"></div>
+        <div class="answer hidden" id="translation"></div>
       </main>
       <footer>
         Coded by

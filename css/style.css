@@ -3,13 +3,28 @@
 }
 
 body {
-  background: #e7eae9;
+  background: #d5def5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  border-radius: 10px;
-  margin: 100px auto;
-  max-width: 600px;
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--main-color);
+  font-family: "Rochester", cursive;
+  font-size: 50px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  bottom: 40px;
 }
 
 .genie-picture {
@@ -34,9 +49,10 @@ body {
   }
 }
 
-.select {
-  display: flex;
-  justify-content: center;
+.container {
+  border-radius: 10px;
+  margin: 100px auto;
+  max-width: 600px;
 }
 
 select {
@@ -45,37 +61,25 @@ select {
   border-radius: 10px;
   color: var(--main-color);
   cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 500px;
   text-align: center;
   width: 30%;
 }
 
-.material-symbols-outlined {
-  color: var(--main-color);
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-header {
+.select {
   display: flex;
   justify-content: center;
 }
 
-h1 {
-  color: var(--main-color);
-  font-family: "Rochester", cursive;
-  font-size: 50px;
-  margin-right: 5px;
-  margin-bottom: 10px;
+select:focus-visible {
+  outline: none;
 }
 
-.subheading {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  position: relative;
-  bottom: 40px;
+.material-symbols-outlined {
+  color: var(--main-color);
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 main {
@@ -87,7 +91,8 @@ form {
 }
 
 .requested-word {
-  border: 1px solid var(--main-color);
+  background: #eae1f7;
+  border: 2px solid var(--main-color);
   border-radius: 10px;
   box-sizing: border-box;
   color: var(--main-color);
@@ -99,19 +104,49 @@ form {
 ::placeholder {
   color: var(--main-color);
   font-family: Arial, Helvetica, sans-serif;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .ask-genie-button {
-  background-color: #a1042b;
+  background-color: #0f3b7c;
   border: none;
   border-radius: 10px;
   color: #e3bc59;
   cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 10px 15px;
+}
+
+.message {
+  animation: blink 1.6s linear infinite;
+}
+
+@keyframes blink {
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.6;
+  }
+}
+
+.answer {
+  background: #e9e1f7;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--main-color);
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
 }
 
 a {
@@ -125,4 +160,8 @@ footer {
   font-size: 13px;
   margin-top: 30px;
   text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
 }
