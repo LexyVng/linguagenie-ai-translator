@@ -58,7 +58,7 @@ h1 {
 select {
   background-color: #50c2f7;
   border: 1px solid var(--main-color);
-  border-radius: 10px;
+  border-radius: 8px;
   color: var(--main-color);
   cursor: pointer;
   font-size: 14px;
@@ -110,7 +110,7 @@ form {
 .ask-genie-button {
   background-color: #0f3b7c;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   color: #e3bc59;
   cursor: pointer;
   font-size: 16px;
