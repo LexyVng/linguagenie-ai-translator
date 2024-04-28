@@ -93,7 +93,7 @@ form {
 .requested-word {
   background: #eae1f7;
   border: 2px solid var(--main-color);
-  border-radius: 10px;
+  border-radius: 5px;
   box-sizing: border-box;
   color: var(--main-color);
   font-size: 14px;
